@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { LightSwitch } from '@skeletonlabs/skeleton';
 	export let data;
 	console.log(data);
 
@@ -9,11 +8,7 @@
 	let max = data.props.data.daily[0].temp.max;
 </script>
 
-<div class="p-4">
-	<LightSwitch />
-</div>
-
-<div class="card m-4 p-4 md:p-10 space-y-4 bg-white/20 dark:bg-black/20">
+<div class="card m-4 md:p-10 space-y-4 bg-white/20 dark:bg-black/20">
 	{#if data}
 		<header class="card-header">
 			<div class="flex items-center justify-center">
@@ -35,7 +30,9 @@
 
 		<footer class="card-footer">
 			<div class="p-4 md:p-10 space-y-4 bg-white/10 dark:bg-black/10">
-				<div class="flex justify-center items-center mx-auto transition-[width] duration-200 w-full">
+				<div
+					class="flex justify-center items-center mx-auto transition-[width] duration-200 w-full"
+				>
 					<div class="w-full grid grid-cols-3 gap-4 place-items-center">
 						<p>&#8593 <b>{max} &#8451</b></p>
 						<span class="divider-vertical h-20" />
