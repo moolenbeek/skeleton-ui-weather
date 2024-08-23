@@ -1,5 +1,5 @@
 import type { PageServerLoad } from "./$types";
-import { WEATHER_API_KEY } from "$env/static/private"
+import { WEATHER_API_KEY } from "$env/static/private";
 
 const lat = "45.424721";
 const lon = "-75.695000";
